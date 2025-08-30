@@ -1,6 +1,6 @@
 pkgname=attr
 pkgver=2.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Extended attribute support library for ACL support"
 arch=('x86_64')
 url="https://savannah.nongnu.org/projects/attr"
@@ -9,8 +9,8 @@ license=(
     'LGPL-2.1-or-later'
 )
 depends=('glibc')
+makedepends=('gettext')
 backup=(etc/xattr.conf)
-options=('!lto')
 source=(https://download.savannah.gnu.org/releases/${pkgname}/${pkgname}-${pkgver}.tar.gz)
 sha256sums=(39bf67452fa41d0948c2197601053f48b3d78a029389734332a6309a680c6c87)
 
